@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
        <h1>Hello React</h1>
+       <h2>Author: Dushani RPU</h2>
       </header>
     </div>
   );
