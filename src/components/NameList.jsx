@@ -33,6 +33,21 @@ function NameList() {
       "age": 7},
     picture: {
       "medium": "https://randomuser.me/api/portraits/med/women/60.jpg"}
+  },
+  { 
+    name:{
+    "title": "Mr.",
+    "first": "Magnus",
+    "last": "Hansen"},
+    location: {
+      "street": "1160 Bellisvej",
+      "city": "Brondby"},
+    email: "magnus.hansen@example.com",
+    dob: {
+      "date": "2005-06-20",
+      "age": 17},
+    picture: {
+      "medium": "https://randomuser.me/api/portraits/med/men/96.jpg"}
   }
 ];
   return <div>
