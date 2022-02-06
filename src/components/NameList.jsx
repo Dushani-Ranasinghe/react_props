@@ -3,25 +3,34 @@ import NameItem from './NameItem';
 
 function NameList() {
   //create and object called NameList
-  const nameList={ 
+  const nameList=[{ 
     name:{
-    "title": "mr",
-    "first": "brad",
-    "last": "gibson"},
+    "title": "Mr.",
+    "first": "Brad",
+    "last": "Gibson"},
     location: {
       "street": "9278 new road",
       "city": "kilcoole",},
     email: "brad.gibson@example.com",
     dob: {
-      "date": "1993-07-20T09:44:18.674Z",
+      "date": "1993-07-20",
       "age": 26},
     picture: {
       "medium": "https://randomuser.me/api/portraits/med/men/75.jpg"}
-  };
+  }];
   return <div>
       <ul>
-         <NameItem name="Anne" course="CSE"/>
-         <NameItem name="Ben" course="IT"/>
+         <NameItem 
+         picture={nameList[0].picture.medium}
+         //old way of combinning strings
+         //name={nameList.name.title + ' ' + nameList.name.first} 
+         name={`${nameList[0].name.title} ${nameList[0].name.first} ${nameList[0].name.last}`}
+         //this is the new way using string literals ES6
+         location={`${nameList[0].location.street} ${nameList[0].location.city}`}
+         email={nameList[0].email}
+         birthday={nameList[0].dob.date}
+         />
+        
       </ul>
   </div>;
 }
