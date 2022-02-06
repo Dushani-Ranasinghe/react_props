@@ -36,7 +36,7 @@ const nameListComponent =()=>{
          key={person.id}
          picture={person.picture.medium}
          name={`${person.name.title} ${person.name.first} ${person.name.last}`}
-         location={`${person.location.street} ${person.location.city}`}
+         location={`${person.location.street}, ${person.location.city}`}
          email={person.email}
          birthday={person.dob.date}
          />
