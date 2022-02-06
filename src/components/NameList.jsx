@@ -1,6 +1,5 @@
 import React from 'react';
 import NameItem from './NameItem';
-import '../styles/NameList.css'
 
 function NameList() {
   //create and object called NameList

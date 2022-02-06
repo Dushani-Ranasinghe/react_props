@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/NameItem.css'
 import Avatar from 'react-avatar';
 import Card from 'react-bootstrap/Card'
 import 'bootstrap/dist/css/bootstrap.min.css';

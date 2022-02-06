@@ -10,7 +10,7 @@ function App() {
       <h1>Name List</h1>
       <p>We are going to get some random user information 
         from <i>randomuser.me</i> and display the data as a list 
-        using <b>react props and lists</b>
+        using <b>react props, lists, map()</b>
       </p>
        <NameList/>
     </div>
