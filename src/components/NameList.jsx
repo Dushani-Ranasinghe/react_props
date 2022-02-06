@@ -3,21 +3,38 @@ import NameItem from './NameItem';
 
 function NameList() {
   //create and object called NameList
-  const nameList=[{ 
+  const nameList=[
+  { 
     name:{
     "title": "Mr.",
     "first": "Brad",
     "last": "Gibson"},
     location: {
       "street": "9278 new road",
-      "city": "kilcoole",},
+      "city": "kilcoole"},
     email: "brad.gibson@example.com",
     dob: {
       "date": "1993-07-20",
       "age": 26},
     picture: {
       "medium": "https://randomuser.me/api/portraits/med/men/75.jpg"}
-  }];
+  },
+  { 
+    name:{
+    "title": "Ms.",
+    "first": "Maja",
+    "last": "Kristensen"},
+    location: {
+      "street": "6034 Vagtelvej",
+      "city": "Allinge"},
+    email: "maja.kristensen@example.com",
+    dob: {
+      "date": "2015-01-06",
+      "age": 7},
+    picture: {
+      "medium": "https://randomuser.me/api/portraits/med/women/60.jpg"}
+  }
+];
   return <div>
       <ul>
          <NameItem 
