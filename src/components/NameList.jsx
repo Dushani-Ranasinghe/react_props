@@ -26,41 +26,27 @@ function NameList() {
     picture: {"medium": "https://randomuser.me/api/portraits/med/men/96.jpg"}
   }
 ];
-  return <div>
-      <ul>
+
+const nameListComponent =()=>{
+  return nameList.map((person)=>{
+  return(
          <NameItem 
-         picture={nameList[0].picture.medium}
-         //old way of combinning strings
-         //name={nameList.name.title + ' ' + nameList.name.first} 
-         name={`${nameList[0].name.title} ${nameList[0].name.first} ${nameList[0].name.last}`}
-         //this is the new way using string literals ES6
-         location={`${nameList[0].location.street} ${nameList[0].location.city}`}
-         email={nameList[0].email}
-         birthday={nameList[0].dob.date}
+         picture={person.picture.medium}
+         name={`${person.name.title} ${person.name.first} ${person.name.last}`}
+         location={`${person.location.street} ${person.location.city}`}
+         email={person.email}
+         birthday={person.dob.date}
          />
-          <NameItem 
-         picture={nameList[1].picture.medium}
-         //old way of combinning strings
-         //name={nameList.name.title + ' ' + nameList.name.first} 
-         name={`${nameList[1].name.title} ${nameList[1].name.first} ${nameList[1].name.last}`}
-         //this is the new way using string literals ES6
-         location={`${nameList[1].location.street} ${nameList[1].location.city}`}
-         email={nameList[1].email}
-         birthday={nameList[1].dob.date}
-         />
-          <NameItem 
-         picture={nameList[2].picture.medium}
-         //old way of combinning strings
-         //name={nameList.name.title + ' ' + nameList.name.first} 
-         name={`${nameList[2].name.title} ${nameList[2].name.first} ${nameList[2].name.last}`}
-         //this is the new way using string literals ES6
-         location={`${nameList[2].location.street} ${nameList[2].location.city}`}
-         email={nameList[2].email}
-         birthday={nameList[2].dob.date}
-         />
-        
-      </ul>
-  </div>;
+         ); 
+        } );
 }
+  return(
+    <div>
+      <ul>{nameListComponent()}</ul>
+    </div>
+  );
+}
+
+
 
 export default NameList;
